@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 7709067739434964736}
   - component: {fileID: 7709067739434964737}
   - component: {fileID: 7709067739434964764}
+  - component: {fileID: 7054994348461197291}
+  - component: {fileID: 2701683261774471569}
   m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
+  m_Name: player
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +110,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &7709067739434964764
 MonoBehaviour:
@@ -123,3 +125,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+--- !u!114 &7054994348461197291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709067739434964742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac697c142f887c442b9e5e515de4c62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePerShot: 20
+  timeBetweenBullets: 0.15
+  range: 100
+  bullet: {fileID: 2525352000186440524, guid: 2eddf9d6ef56f404d898d4e8268159ea, type: 3}
+--- !u!114 &2701683261774471569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709067739434964742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f543e0ae590fbf549ac8417574848166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100

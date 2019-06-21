@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\teshi\Scene\BackgroundController.cs" />
     <Compile Include="Assets\teshi\Scene\ToMain.cs" />
     <Compile Include="Assets\teshi\Scene\ToTitle.cs" />
     <Reference Include="Unity.Timeline.Editor">

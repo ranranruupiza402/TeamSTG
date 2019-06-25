@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2525352000186440524
+--- !u!1 &689112932738735972
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6713750934434979427}
-  - component: {fileID: 1753458590611248177}
-  - component: {fileID: 8677248258050940089}
-  - component: {fileID: 2678278643924217012}
-  - component: {fileID: 2745727322755783549}
+  - component: {fileID: 689112932738735968}
+  - component: {fileID: 689112932738735969}
+  - component: {fileID: 689112932738735974}
+  - component: {fileID: 689112932738735975}
+  - component: {fileID: 689112932738735971}
+  - component: {fileID: 689112932738735970}
   m_Layer: 0
-  m_Name: bullet
-  m_TagString: bullet
+  m_Name: brotherR
+  m_TagString: brother
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6713750934434979427
+--- !u!4 &689112932738735968
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2525352000186440524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_GameObject: {fileID: 689112932738735972}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -1, y: -1.5, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1753458590611248177
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!33 &689112932738735969
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2525352000186440524}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8677248258050940089
+  m_GameObject: {fileID: 689112932738735972}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &689112932738735974
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2525352000186440524}
+  m_GameObject: {fileID: 689112932738735972}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -79,29 +80,51 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &2678278643924217012
-SphereCollider:
+--- !u!136 &689112932738735975
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2525352000186440524}
+  m_GameObject: {fileID: 689112932738735972}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2745727322755783549
+--- !u!114 &689112932738735971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2525352000186440524}
+  m_GameObject: {fileID: 689112932738735972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c16051a241d0448beb50b66655ffc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 67b631391593e55469432f60ed8c0616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  isLeft: 0
+  target: {fileID: 0}
+  speed: 5
+  delay: 0.5
+  left: {x: 1, y: 1.5, z: 0}
+  right: {x: 1, y: -1.5, z: 0}
+--- !u!114 &689112932738735970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689112932738735972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac697c142f887c442b9e5e515de4c62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePerShot: 20
+  timeBetweenBullets: 0.15
+  range: 100
+  bullet: {fileID: 2525352000186440524, guid: 2eddf9d6ef56f404d898d4e8268159ea, type: 3}

@@ -4,7 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - player
+=======
+  - bullet
+  - player
+  - enemy
+  - brother
+>>>>>>> origin/okuda
   layers:
   - Default
   - TransparentFX

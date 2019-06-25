@@ -17,11 +17,9 @@ GameObject:
   - component: {fileID: 7054994348461197291}
   - component: {fileID: 2701683261774471569}
   m_Layer: 0
-<<<<<<< HEAD
   m_Name: Player
 =======
   m_Name: player
->>>>>>> origin/okuda
   m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
